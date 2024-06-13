@@ -6,6 +6,12 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/Architecture.jpg" width="800" height="450" alt="Architecture">
 </p> 
 
+## Table of Content
+- [Specification](#specification)
+- [Instructions In The Register](#instructions-in-the-register)
+- [Hazard Solutions](#hazard-solutions)
+
+
 ## Specification
 
 | Signal Name | I/O | Width | Sample Description |
@@ -27,7 +33,7 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 | Fwd_B | O | 2 | When the signal is asserted, it indicates a data hazard in the rt register. |
 
 
-## Instructions in the register
+## Instructions In The Register
 
 | Register Address (Hex) | Instruction (Hex) | Instruction Meaning | Desciption |
 | :----: | :----: | :----: | :----: |
