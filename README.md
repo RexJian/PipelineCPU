@@ -10,6 +10,9 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 - [Specification](#specification)
 - [Instructions In The Register](#instructions-in-the-register)
 - [Hazard Solutions](#hazard-solutions)
+  - [Data Hazard](#data-hazard)
+  - [Control Hazard](#control-hazard)
+  - [Load-use Data Hazard](#load-use-data-hazard)
 
 
 ## Specification
