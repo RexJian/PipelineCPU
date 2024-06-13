@@ -1,4 +1,4 @@
-# PipelineCPU
+# Pipeline CPU
 Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it divides the command into five stages: Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Data Memory Access (MEM), and Write Back (WB). The CPU is composed of an ALU, an adder, data memory, instruction memory, a program counter (PC), and so on. In addition, the instructions in the register include three typical types of MIPS instructions: add, slt, beq, bne, sw, and lw. The CPU will start executing from address 0, then follow the program counter to the specified address to complete these instructions.The architecture is depicted in the following figure.
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/Architecture.jpg" width="800" height="450" alt="Architecture">
