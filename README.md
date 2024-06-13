@@ -72,7 +72,7 @@ When this branch command is valid, the condition_met signal will be asserted. Su
    <br> <strong> The waveform corresponding to the control hazard. </strong>
 </p>
 
-### Load-use Hazard
+### Load-use Data Hazard
 When an instruction depends on the result of a previous load instruction before it has been completed, the stall signal will be asserted. Subsequently, the IF/ID pipeline register will stall for a cycle, and the data in the ID/EX pipeline register will be cleared.
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/LoadDataHazard_Command.jpg" width="850" height="75" >
