@@ -20,7 +20,10 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 | Rs | O | 5 | The address of source register |
 | Rt | O | 5 | The address of targe register |
 | Rd | O | 5 | The address of destination register |
-| Write_Rd | O | 32 | The value written in the destination register |
+| Write_D | O | 32 | The value written in the destination register |
+| Fwd_A | O | 2 | When the signal is asserted, it present the data hazard in rs register |
+| Fwd_B | O | 2 | When the signal is asserted, it present the data hazard in rt register |
+
 
 ## Instructions in the register
 
