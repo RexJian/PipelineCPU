@@ -46,3 +46,37 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 | 38 | 8c020050 | lw $2, 80($0) | Load the value of the address 80 of data memory to $2 |
 | 3c | 00442824 | and $5, $2, $4 | $5 = 7 and 1 = 1 |
 | 40 | ac020054 | sw $2, 84($0) | Store $2 value to the address of 80 of data memory |
+
+## Hazard Solutions
+### Data Hazard
+When these source registers in a current instruction are dependent on the destination register Rd of a previous instruction, the Fwd_A or Fwd_B will be asserted. Then the CPU will use data forward to solve the problem.
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Command.jpg" width="850" height="35" >
+   <br> <strong> When the CPU implement to the command, it would cause data hazard in $7 register. </strong>
+</p>
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Waveform.jpg" width="850" height="350" >
+   <br> <strong> The data hazard corresponding waveform </strong>
+</p>
+
+### Control Hazard
+When these branch command is valid, the condition_met signal will be asserted. Then the data in the IF/ID and ID/EX pipeline registers will be cleaned in next cycle.
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/ControlHazard_Command.jpg" width="850" height="130" >
+   <br> <strong> When the CPU implement to the command, it would cause control hazard because the branch condtion is valid. </strong>
+</p>
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/ControlHazard_Waveform.jpg" width="850" height="320" >
+   <br> <strong> The control hazard corresponding waveform </strong>
+</p>
+
+### Load-use Hazard
+When an instruction depends on the result of a previous load instruction before it has been completed, the stall signal will be asserted. Then the IF/ID pipeline register will stall a cycle and the data in the ID/EX pipeline register will be cleaned 
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/LoadDataHazard_Command.jpg" width="850" height="75" >
+   <br> <strong> When the CPU implement to the command, it would cause load-use data hazard in $2 register</strong>
+</p>
+<p align="center">
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/LoadDataHazard_Waveform.jpg" width="850" height="320" >
+   <br> <strong> The load-use data hazard corresponding waveform </strong>
+</p>
