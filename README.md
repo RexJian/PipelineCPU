@@ -1,5 +1,7 @@
-# Pipeline CPU
-Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it divides the command into five stages: Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Data Memory Access (MEM), and Write Back (WB). The CPU is composed of an ALU, an adder, data memory, instruction memory, a program counter (PC), and so on. In addition, the instructions in the register include three typical types of MIPS instructions: add, slt, beq, bne, sw, and lw. The CPU will start executing from address 0, then follow the program counter to the specified address to complete these instructions.The architecture is depicted in the following figure.
+# 5-Stage Pipeline MIPS CPU
+Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it divides the command into five stages: Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Data Memory Access (MEM), and Write Back (WB).<strong> The CPU employs various methods to resolve data hazards and control hazards, ensuring not only the correctness of the results but also achieving good performance throughput.</strong> The architecture is depicted in the following figure.
+
+
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/Architecture.jpg" width="800" height="450" alt="Architecture">
 </p> 
@@ -15,14 +17,14 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 | ALU_D1 | O | 32 | One of the ALU input|
 | Y | O | 32 | One of the ALU input |
 | Ex_Alu_R | O | 32 | The result of ALU|
-| stall | O | 1 | When the signal is asserted, the data in the pipline registers will remain.|
-| condition_met | O | 1 | When the signal is asserted, the  data in the pipeline register will be clean, then the new adddress will be the input in the next cycle. |
+| stall | O | 1 | When the signal is asserted, the data in the pipeline registers will remain unchanged.|
+| condition_met | O | 1 |When the signal is asserted, the data in the pipeline register will be cleared, and the new address will be the input in the next cycle. |
 | Rs | O | 5 | The address of source register |
 | Rt | O | 5 | The address of targe register |
 | Rd | O | 5 | The address of destination register |
 | Write_D | O | 32 | The value written in the destination register |
-| Fwd_A | O | 2 | When the signal is asserted, it present the data hazard in rs register |
-| Fwd_B | O | 2 | When the signal is asserted, it present the data hazard in rt register |
+| Fwd_A | O | 2 | When the signal is asserted, it indicates a data hazard in the rs register. |
+| Fwd_B | O | 2 | When the signal is asserted, it indicates a data hazard in the rt register. |
 
 
 ## Instructions in the register
@@ -49,34 +51,34 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 
 ## Hazard Solutions
 ### Data Hazard
-When these source registers in a current instruction are dependent on the destination register Rd of a previous instruction, the Fwd_A or Fwd_B will be asserted. Then the CPU will use data forward to solve the problem.
+When the source registers in the current instruction depend on the destination register (Rd) of a previous instruction, the Fwd_A or Fwd_B signals will be asserted. The CPU will then use data forwarding to resolve this dependency.
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Command.jpg" width="850" height="50" >
-   <br> <strong> When the CPU implement to the command, it would cause data hazard in $7 register. </strong>
+   <br> <strong> When the CPU implement to the command, it would cause a data hazard in $7 register. </strong>
 </p>
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Waveform.jpg" width="850" height="350" >
-   <br> <strong> The data hazard corresponding waveform </strong>
+   <br> <strong> The waveform corresponding to the data hazard </strong>
 </p>
 
 ### Control Hazard
-When these branch command is valid, the condition_met signal will be asserted. Then the data in the IF/ID and ID/EX pipeline registers will be cleaned in next cycle.
+When this branch command is valid, the condition_met signal will be asserted. Subsequently, the data in the IF/ID and ID/EX pipeline registers will be cleared in the next cycle.
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/ControlHazard_Command.jpg" width="850" height="130" >
-   <br> <strong> When the CPU implement to the command, it would cause control hazard because the branch condtion is valid. </strong>
+   <br> <strong> When the CPU implement to the command, it would cause a control hazard because the branch condtion is valid. </strong>
 </p>
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/ControlHazard_Waveform.jpg" width="850" height="320" >
-   <br> <strong> The control hazard corresponding waveform </strong>
+   <br> <strong> The waveform corresponding to the control hazard. </strong>
 </p>
 
 ### Load-use Hazard
-When an instruction depends on the result of a previous load instruction before it has been completed, the stall signal will be asserted. Then the IF/ID pipeline register will stall a cycle and the data in the ID/EX pipeline register will be cleaned 
+When an instruction depends on the result of a previous load instruction before it has been completed, the stall signal will be asserted. Subsequently, the IF/ID pipeline register will stall for a cycle, and the data in the ID/EX pipeline register will be cleared.
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/LoadDataHazard_Command.jpg" width="850" height="75" >
-   <br> <strong> When the CPU implement to the command, it would cause load-use data hazard in $2 register</strong>
+   <br> <strong> When the CPU implement to the command, it would cause a load-use data hazard in $2 register</strong>
 </p>
 <p align="center">
   <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/LoadDataHazard_Waveform.jpg" width="850" height="320" >
-   <br> <strong> The load-use data hazard corresponding waveform </strong>
+   <br> <strong> The waveform corresponding to the load-use data hazard. </strong>
 </p>
