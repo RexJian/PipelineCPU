@@ -1,5 +1,5 @@
 # 5-Stage Pipeline MIPS CPU
-Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it divides the command into five stages: Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Data Memory Access (MEM), and Write Back (WB).<strong> The CPU employs various methods to resolve data hazards and control hazards, ensuring not only the correctness of the results but also achieving good performance throughput.</strong> The architecture is depicted in the following figure.
+Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it divides the command into five stages: Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Data Memory Access (MEM), and Write Back (WB).<strong> I employs various methods to resolve data hazards and control hazards, ensuring not only the correctness of the results but also achieving good performance throughput.</strong> The architecture is depicted in the following figure.
 
 
 <p align="center">
