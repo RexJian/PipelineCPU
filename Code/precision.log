@@ -1,0 +1,1033 @@
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+//  Precision RTL Synthesis 64-bit 2023.1.0.14 (Production Release) Fri Feb 17 02:47:53 PST 2023
+//  
+//             This material contains trade secrets or otherwise confidential
+//             information owned by Siemens Industry Software Inc. or its    
+//             affiliates (collectively, "Siemens"), or its licensors. Access to
+//             and use of this information is strictly limited as set forth    
+//             in the Customer's applicable agreements with Siemens.           
+//  
+//                              Unpublished work. Copyright 2023 Siemens               
+//  
+//  Running on Linux runner@0e910cc50ffd #201-Ubuntu SMP Thu Mar 28 15:39:01 UTC 2024 5.4.0-181-generic x86_64
+//  
+//  Start time Thu Jun 13 04:48:42 2024
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [15302]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15328]: Setting Part to: "7A100TCSG324".
+# Info: [15329]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3052]: Decompressing file : /usr/share/precision/Mgc_home/pkgs/psr/techlibs/xca7.syn in /home/runner/impl_1/synlib.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [645]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2023a.3
+# Info: [42003]: Starting analysis of files in library "work"
+# Info: [41002]: Analyzing input file "/home/runner/design.sv" ...
+# Info: [41021]: Analyzing included file "PC.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "INST_MEM.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "MUX2X5.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "REG_FILE.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "CONUNIT.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "EXT16T32.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "MUX2X32.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "ALU.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "DATAMEM.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "SHIFTER_COMBINATION.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "PCADD4.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "MUX4X32.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "IF_ID.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "ID_EX.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "EX_MEM.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "MEM_WB.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "MUX4X32_FWD.v" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [670]: Top module of the design is set to: main.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2023a.3
+# Info: [40000]: Last compiled on Feb 10 2023 07:53:59
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2023a.3
+# Info: [40000]: Last compiled on Feb 10 2023 08:22:05
+# Info: [44512]: Initializing...
+# Info: [44506]: Module MUX4X32: Pre-processing...
+# Info: [44506]: Module PC: Pre-processing...
+# Info: [44506]: Module PCADD4: Pre-processing...
+# Info: [44506]: Module INST_MEM: Pre-processing...
+# Info: [44506]: Module IF_ID: Pre-processing...
+# Info: [44506]: Module CONUNIT: Pre-processing...
+# Info: [44506]: Module MUX2X5: Pre-processing...
+# Info: [44506]: Module EXT16T32: Pre-processing...
+# Info: [45251]: Built-in hardware memory core inferred for variable ': "REG_FILE.register depth = 32, width = 32"'.
+# Info: [44506]: Module REG_FILE: Pre-processing...
+# Info: [44506]: Module ID_EX: Pre-processing...
+# Info: [44506]: Module MUX4X32_FWD: Pre-processing...
+# Info: [44506]: Module MUX2X32: Pre-processing...
+# Info: [44506]: Module ALU: Pre-processing...
+# Info: [44506]: Module EX_MEM: Pre-processing...
+# Info: [45251]: Built-in hardware memory core inferred for variable ': "DATAMEM.ROM depth = 32, width = 32"'.
+# Info: [44506]: Module DATAMEM: Pre-processing...
+# Info: [44506]: Module MEM_WB: Pre-processing...
+# Info: [44522]: Root Module main: Pre-processing...
+# Warning: [45729]: "MUX2X5.v", line 2: Input port instruction[31:21] has never been used.
+# Warning: [45729]: "MUX2X5.v", line 2: Input port instruction[10:0] has never been used.
+# Warning: [45729]: "REG_FILE.v", line 9: test_var has never been used.
+# Warning: [45729]: "DATAMEM.v", line 3: Input port Mem_Alu_R[31:7] has never been used.
+# Warning: [45729]: "DATAMEM.v", line 3: Input port Mem_Alu_R[1:0] has never been used.
+# Warning: [45729]: "DATAMEM.v", line 7: rom_addr has never been used.
+# Warning: [45729]: "/home/runner/design.sv", line 28: extention_addr has never been used.
+# Warning: [45729]: "/home/runner/design.sv", line 28: J_addr has never been used.
+# Warning: [45729]: "/home/runner/design.sv", line 32: Cout has never been used.
+# Info: [44508]: Module MUX4X32: Compiling...
+# Info: [44508]: Module PC: Compiling...
+# Info: [44508]: Module PCADD4: Compiling...
+# Info: [44508]: Module INST_MEM: Compiling...
+# Info: [44508]: Module IF_ID: Compiling...
+# Info: [44508]: Module CONUNIT: Compiling...
+# Info: [44508]: Module MUX2X5: Compiling...
+# Info: [44508]: Module EXT16T32: Compiling...
+# Info: [44508]: Module REG_FILE: Compiling...
+# Info: [44508]: Module ID_EX: Compiling...
+# Info: [44508]: Module MUX4X32_FWD: Compiling...
+# Info: [44508]: Module MUX2X32: Compiling...
+# Info: [44508]: Module ALU: Compiling...
+# Info: [44508]: Module EX_MEM: Compiling...
+# Info: [44508]: Module DATAMEM: Compiling...
+# Info: [44508]: Module MEM_WB: Compiling...
+# Info: [44523]: Root Module main: Compiling...
+# Info: [45205]: "MUX4X32.v", line 8: Module MUX4X32, Net(s) Out_addr[31:0]: Latch inferred.
+# Info: [45309]: "INST_MEM.v", line 5: Optimizing state bit(s) instruction[30] to constant 0
+# Info: [45309]: "INST_MEM.v", line 5: Optimizing state bit(s) instruction[25:24] to constant 0
+# Info: [45309]: "INST_MEM.v", line 5: Optimizing state bit(s) instruction[20:19] to constant 0
+# Info: [45309]: "INST_MEM.v", line 5: Optimizing state bit(s) instruction[15:14] to constant 0
+# Info: [45309]: "INST_MEM.v", line 5: Optimizing state bit(s) instruction[10:7] to constant 0
+# Info: [45205]: "INST_MEM.v", line 5: Module INST_MEM, Net(s) instruction[29:28]: Latch inferred.
+# Info: [45205]: "INST_MEM.v", line 5: Module INST_MEM, Net(s) instruction[23:21]: Latch inferred.
+# Info: [45205]: "INST_MEM.v", line 5: Module INST_MEM, Net(s) instruction[18:16]: Latch inferred.
+# Info: [45205]: "INST_MEM.v", line 5: Module INST_MEM, Net(s) instruction[12:11]: Latch inferred.
+# Info: [45205]: "INST_MEM.v", line 5: Module INST_MEM, Net(s) instruction[6:0]: Latch inferred.
+# Info: [45193]: "IF_ID.v", line 3: Net IF_inst[25:16] is unused after optimization
+# Info: [45307]: "IF_ID.v", line 16: The driving logic for the net ID_inst[25:16] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "REG_FILE.v", line 12: The driving logic for the net read_data1[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "REG_FILE.v", line 13: The driving logic for the net read_data2[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "ID_EX.v", line 118: The driving logic for the net Ex_D1[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "ID_EX.v", line 127: The driving logic for the net Ex_D2[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45193]: "EX_MEM.v", line 4: Net Ex_Alu_R[6:2] is unused after optimization
+# Info: [45307]: "EX_MEM.v", line 18: The driving logic for the net Mem_Alu_R[6:2] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "DATAMEM.v", line 9: The driving logic for the net Dout[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "MEM_WB.v", line 9: The driving logic for the net Wb_D[31:0] has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 520.
+# Info: [44835]: Total CPU time for compilation: 1.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [15334]: Doing rtl optimizations.
+# Info: [671]: Finished compiling design.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [4557]: 7 Instances are flattened in hierarchical block .work.main.INTERFACE.
+# Info: [20013]: Precision will use 8 processor(s).
+# Info: [15002]: Optimizing design view:.work.CONUNIT.INTERFACE_unfold_1716
+# Info: [15002]: Optimizing design view:.work.MUX4X32_FWD.INTERFACE
+# Info: [15002]: Optimizing design view:.work.INST_MEM.INTERFACE_unfold_1858
+# Info: [15002]: Optimizing design view:.work.DATAMEM_unfolded0.INTERFACE_unfold_1356
+# Info: [15002]: Optimizing design view:.work.MUX4X32.INTERFACE
+# Info: [15002]: Optimizing design view:.work.REG_FILE_unfolded0.INTERFACE_unfold_1361
+# Info: [15002]: Optimizing design view:.work.EX_MEM_unfolded0.INTERFACE_unfold_1231
+# Info: [15002]: Optimizing design view:.work.ID_EX_unfolded0.INTERFACE_unfold_1149
+# Info: [15002]: Optimizing design view:.work.ALU.INTERFACE
+# Info: [15002]: Optimizing design view:.work.main.INTERFACE
+# Info: [4557]: 10 Instances are flattened in hierarchical block .work.main.INTERFACE.
+# Info: [15002]: Optimizing design view:.work.main.INTERFACE
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:CLK
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: CLK_PS		Clock Name: CLK
+# Info: [3027]: Writing file: /home/runner/impl_1/main.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/main.xdc.
+# Info: -- Writing file /home/runner/impl_1/main.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/main.v.
+# Info: -- Writing file /home/runner/impl_1/main.tcl
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [671]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 22.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 35.8 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/main.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: -----------------------------------------------------------
+# Info: 0               /home/runner/impl_1/main_area.rep
+# Info: 1               /home/runner/impl_1/main_timing.rep
+# Info: 2               /home/runner/impl_1/main_violations.rep
+# Info: 3               /home/runner/impl_1/main_con_rep.sdc
+# Info: 4               /home/runner/impl_1/main_tech_con_rep.sdc
+# Info: 5               /home/runner/impl_1/main_fsm.rep
+# Info: 6               /home/runner/impl_1/main_dsp_modes.rep
+# Info: 7               /home/runner/impl_1/main_ram_modes.rep
+# Info: 8               /home/runner/impl_1/main_env.htm
+# Info: 9               /home/runner/impl_1/main.edf
+# Info: 10              /home/runner/impl_1/main.v
+# Info: 11              /home/runner/impl_1/main.xdc
+# Info: 12              /home/runner/impl_1/main.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               184     210      87.62%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              702     63400     1.11%
+# Info: CLB Slices                        147     15850     0.93%
+# Info: Dffs or Latches                   430     126800    0.34%
+# Info: Block RAMs                        0       135       0.00%
+# Info: Distributed RAMs
+# Info: - RAM32M                          14
+# Info: - RAM64M                          2
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: ********************************************************
+# Info: Library: work    Cell: main    View: INTERFACE
+# Info: ********************************************************
+# Info:  Number of ports :                          184
+# Info:  Number of nets :                           991
+# Info:  Number of instances :                      419
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                430
+# Info:  Number of LUTs :                           702
+# Info:  Number of Primitive LUTs :                 741
+# Info:    Number of LUTs as Distributed RAM :       64
+# Info:  Number of LUTs with LUTNM/HLUTNM :          78
+# Info:  Number of MUX CARRYs :                     132
+# Info:  Number of accumulated instances :         1574
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.main.INTERFACE
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Port             | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | CLK              | Input     |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | EN               | Input     |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | CLR_N            | Input     |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(31)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(30)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(29)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(28)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(27)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(26)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(25)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(24)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(23)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(22)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(21)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(20)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(19)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(18)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(17)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(16)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(15)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(14)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(13)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(12)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(11)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(10)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(9)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(8)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(7)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(6)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(5)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(4)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(3)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(2)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(1)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Addr(0)          | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(31)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(30)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(29)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(28)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(27)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(26)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(25)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(24)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(23)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(22)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(21)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(20)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(19)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(18)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(17)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(16)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(15)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(14)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(13)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(12)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(11)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(10)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(9)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(8)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(7)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(6)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(5)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(4)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(3)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(2)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(1)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Alu_D1(0)        | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(31)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(30)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(29)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(28)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(27)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(26)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(25)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(24)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(23)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(22)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(21)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(20)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(19)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(18)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(17)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(16)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(15)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(14)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(13)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(12)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(11)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(10)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(9)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(8)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(7)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(6)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(5)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(4)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(3)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(2)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(1)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Y(0)             | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(31)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(30)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(29)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(28)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(27)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(26)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(25)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(24)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(23)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(22)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(21)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(20)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(19)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(18)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(17)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(16)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(15)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(14)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(13)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(12)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(11)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(10)     | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(9)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(8)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(7)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(6)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(5)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(4)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(3)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(2)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(1)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Ex_Alu_R(0)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(31)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(30)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(29)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(28)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(27)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(26)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(25)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(24)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(23)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(22)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(21)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(20)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(19)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(18)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(17)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(16)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(15)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(14)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(13)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(12)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(11)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(10)      | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(9)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(8)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(7)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(6)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(5)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(4)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(3)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(2)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(1)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Write_D(0)       | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | stall            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | condition_met    | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rs(4)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rs(3)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rs(2)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rs(1)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rs(0)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rt(4)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rt(3)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rt(2)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rt(1)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rt(0)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rd(4)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rd(3)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rd(2)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rd(1)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Rd(0)            | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Fwd_A(1)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Fwd_A(0)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Fwd_B(1)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: | Fwd_B(0)         | Output    |          |          |          |
+# Info: +------------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 2.878):, Logic Levels = 16
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                           GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: mem_wb_reg_Wb_Reg2reg/C     FDRE                  0.000   up
+# Info: mem_wb_reg_Wb_Reg2reg/Q     FDRE        0.496     0.496   up
+# Info: Wb_Reg2reg                  (net)       1.114                  97     0
+# Info: alu/ix324z1517/I2           LUT3                  1.610   up
+# Info: alu/ix324z1517/O            LUT3        0.124     1.734   up
+# Info: alu/nx324z3                 (net)       1.306                   9     1
+# Info: alu/ix324z53541/I0          LUT6                  3.040   up
+# Info: alu/ix324z53541/O           LUT6        0.124     3.164   up
+# Info: alu/nx324z5                 (net)       0.378                   5     2
+# Info: alu/ix60029z1325/I0         LUT6                  3.542   up
+# Info: alu/ix60029z1325/O          LUT6        0.124     3.666   up
+# Info: alu/nx60029z11              (net)       0.000                   1     3
+# Info: alu/Z_eq_0_ix60029z63350/S  MUXCY                 3.666   up
+# Info: alu/Z_eq_0_ix60029z63350/O  MUXCY       0.122     3.788   up
+# Info: alu/nx60029z10              (net)       0.000                   1     4
+# Info: alu/Z_eq_0_ix60029z63349/CI MUXCY                 3.788   up
+# Info: alu/Z_eq_0_ix60029z63349/O  MUXCY       0.029     3.817   up
+# Info: alu/nx60029z9               (net)       0.000                   1     5
+# Info: alu/Z_eq_0_ix60029z63348/CI MUXCY                 3.817   up
+# Info: alu/Z_eq_0_ix60029z63348/O  MUXCY       0.029     3.846   up
+# Info: alu/nx60029z8               (net)       0.000                   1     6
+# Info: alu/Z_eq_0_ix60029z63347/CI MUXCY                 3.846   up
+# Info: alu/Z_eq_0_ix60029z63347/O  MUXCY       0.029     3.875   up
+# Info: alu/nx60029z7               (net)       0.000                   1     7
+# Info: alu/Z_eq_0_ix60029z63346/CI MUXCY                 3.875   up
+# Info: alu/Z_eq_0_ix60029z63346/O  MUXCY       0.029     3.904   up
+# Info: alu/nx60029z6               (net)       0.000                   1     8
+# Info: alu/Z_eq_0_ix60029z63345/CI MUXCY                 3.904   up
+# Info: alu/Z_eq_0_ix60029z63345/O  MUXCY       0.029     3.933   up
+# Info: alu/nx60029z5               (net)       0.000                   1     9
+# Info: alu/Z_eq_0_ix60029z63344/CI MUXCY                 3.933   up
+# Info: alu/Z_eq_0_ix60029z63344/O  MUXCY       0.029     3.962   up
+# Info: alu/nx60029z4               (net)       0.000                   1    10
+# Info: alu/Z_eq_0_ix60029z63343/CI MUXCY                 3.962   up
+# Info: alu/Z_eq_0_ix60029z63343/O  MUXCY       0.029     3.991   up
+# Info: alu/nx60029z3               (net)       0.000                   1    11
+# Info: alu/Z_eq_0_ix60029z63342/CI MUXCY                 3.991   up
+# Info: alu/Z_eq_0_ix60029z63342/O  MUXCY       0.029     4.020   up
+# Info: alu/nx60029z2               (net)       0.000                   1    12
+# Info: alu/Z_eq_0_ix60029z63341/CI MUXCY                 4.020   up
+# Info: alu/Z_eq_0_ix60029z63341/O  MUXCY       0.029     4.049   up
+# Info: alu/nx60029z1               (net)       0.000                   1    13
+# Info: alu/Z_eq_0_ix60029z52223/CI MUXCY                 4.049   up
+# Info: alu/Z_eq_0_ix60029z52223/O  MUXCY       0.029     4.078   up
+# Info: alu/Ex_Z                    (net)       0.941                  33    14
+# Info: id_ex/ix21886z2340/I3       LUT4                  5.019   up
+# Info: id_ex/ix21886z2340/O        LUT4        0.124     5.143   up
+# Info: id_ex/nx21886z3             (net)       0.341                   3    15
+# Info: id_ex/ix21886z58899/I1      LUT4                  5.484   up
+# Info: id_ex/ix21886z58899/O       LUT4        0.124     5.608   up
+# Info: id_ex/nx21886z2             (net)       1.114                 121    16
+# Info: reg_Ex_D1(0)/R              FDRE                  6.722   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.400
+# Info: 		                        -----------
+# Info: 		Data required time:           9.600
+# Info: 		Data arrival time:       -    6.722   ( 22.73% cell delay, 77.27% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        2.878
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 2.878):, Logic Levels = 16
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                           GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: mem_wb_reg_Wb_Reg2reg/C     FDRE                  0.000   up
+# Info: mem_wb_reg_Wb_Reg2reg/Q     FDRE        0.496     0.496   up
+# Info: Wb_Reg2reg                  (net)       1.114                  97     0
+# Info: alu/ix324z1517/I2           LUT3                  1.610   up
+# Info: alu/ix324z1517/O            LUT3        0.124     1.734   up
+# Info: alu/nx324z3                 (net)       1.306                   9     1
+# Info: alu/ix324z53541/I0          LUT6                  3.040   up
+# Info: alu/ix324z53541/O           LUT6        0.124     3.164   up
+# Info: alu/nx324z5                 (net)       0.378                   5     2
+# Info: alu/ix60029z1325/I0         LUT6                  3.542   up
+# Info: alu/ix60029z1325/O          LUT6        0.124     3.666   up
+# Info: alu/nx60029z11              (net)       0.000                   1     3
+# Info: alu/Z_eq_0_ix60029z63350/S  MUXCY                 3.666   up
+# Info: alu/Z_eq_0_ix60029z63350/O  MUXCY       0.122     3.788   up
+# Info: alu/nx60029z10              (net)       0.000                   1     4
+# Info: alu/Z_eq_0_ix60029z63349/CI MUXCY                 3.788   up
+# Info: alu/Z_eq_0_ix60029z63349/O  MUXCY       0.029     3.817   up
+# Info: alu/nx60029z9               (net)       0.000                   1     5
+# Info: alu/Z_eq_0_ix60029z63348/CI MUXCY                 3.817   up
+# Info: alu/Z_eq_0_ix60029z63348/O  MUXCY       0.029     3.846   up
+# Info: alu/nx60029z8               (net)       0.000                   1     6
+# Info: alu/Z_eq_0_ix60029z63347/CI MUXCY                 3.846   up
+# Info: alu/Z_eq_0_ix60029z63347/O  MUXCY       0.029     3.875   up
+# Info: alu/nx60029z7               (net)       0.000                   1     7
+# Info: alu/Z_eq_0_ix60029z63346/CI MUXCY                 3.875   up
+# Info: alu/Z_eq_0_ix60029z63346/O  MUXCY       0.029     3.904   up
+# Info: alu/nx60029z6               (net)       0.000                   1     8
+# Info: alu/Z_eq_0_ix60029z63345/CI MUXCY                 3.904   up
+# Info: alu/Z_eq_0_ix60029z63345/O  MUXCY       0.029     3.933   up
+# Info: alu/nx60029z5               (net)       0.000                   1     9
+# Info: alu/Z_eq_0_ix60029z63344/CI MUXCY                 3.933   up
+# Info: alu/Z_eq_0_ix60029z63344/O  MUXCY       0.029     3.962   up
+# Info: alu/nx60029z4               (net)       0.000                   1    10
+# Info: alu/Z_eq_0_ix60029z63343/CI MUXCY                 3.962   up
+# Info: alu/Z_eq_0_ix60029z63343/O  MUXCY       0.029     3.991   up
+# Info: alu/nx60029z3               (net)       0.000                   1    11
+# Info: alu/Z_eq_0_ix60029z63342/CI MUXCY                 3.991   up
+# Info: alu/Z_eq_0_ix60029z63342/O  MUXCY       0.029     4.020   up
+# Info: alu/nx60029z2               (net)       0.000                   1    12
+# Info: alu/Z_eq_0_ix60029z63341/CI MUXCY                 4.020   up
+# Info: alu/Z_eq_0_ix60029z63341/O  MUXCY       0.029     4.049   up
+# Info: alu/nx60029z1               (net)       0.000                   1    13
+# Info: alu/Z_eq_0_ix60029z52223/CI MUXCY                 4.049   up
+# Info: alu/Z_eq_0_ix60029z52223/O  MUXCY       0.029     4.078   up
+# Info: alu/Ex_Z                    (net)       0.941                  33    14
+# Info: id_ex/ix21886z2340/I3       LUT4                  5.019   up
+# Info: id_ex/ix21886z2340/O        LUT4        0.124     5.143   up
+# Info: id_ex/nx21886z3             (net)       0.341                   3    15
+# Info: id_ex/ix21886z58899/I1      LUT4                  5.484   up
+# Info: id_ex/ix21886z58899/O       LUT4        0.124     5.608   up
+# Info: id_ex/nx21886z2             (net)       1.114                 121    16
+# Info: reg_Ex_D1(0)/R              FDRE                  6.722   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.400
+# Info: 		                        -----------
+# Info: 		Data required time:           9.600
+# Info: 		Data arrival time:       -    6.722   ( 22.73% cell delay, 77.27% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        2.878
+# Info: Critical path #2, (path slack = 3.651):, Logic Levels = 16
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                           GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: mem_wb_reg_Wb_Alu_R(31)/C   FDRE                  0.000   up
+# Info: mem_wb_reg_Wb_Alu_R(31)/Q   FDRE        0.496     0.496   up
+# Info: Wb_Alu_R(31)                (net)       0.341                   3     0
+# Info: alu/ix2313z1517/I1          LUT3                  0.837   up
+# Info: alu/ix2313z1517/O           LUT3        0.124     0.961   up
+# Info: alu/nx2313z3                (net)       1.306                   9     1
+# Info: alu/ix2313z53541/I0         LUT6                  2.267   up
+# Info: alu/ix2313z53541/O          LUT6        0.124     2.391   up
+# Info: alu/nx2313z5                (net)       0.378                   5     2
+# Info: alu/ix60029z1325/I4         LUT6                  2.769   up
+# Info: alu/ix60029z1325/O          LUT6        0.124     2.893   up
+# Info: alu/nx60029z11              (net)       0.000                   1     3
+# Info: alu/Z_eq_0_ix60029z63350/S  MUXCY                 2.893   up
+# Info: alu/Z_eq_0_ix60029z63350/O  MUXCY       0.122     3.015   up
+# Info: alu/nx60029z10              (net)       0.000                   1     4
+# Info: alu/Z_eq_0_ix60029z63349/CI MUXCY                 3.015   up
+# Info: alu/Z_eq_0_ix60029z63349/O  MUXCY       0.029     3.044   up
+# Info: alu/nx60029z9               (net)       0.000                   1     5
+# Info: alu/Z_eq_0_ix60029z63348/CI MUXCY                 3.044   up
+# Info: alu/Z_eq_0_ix60029z63348/O  MUXCY       0.029     3.073   up
+# Info: alu/nx60029z8               (net)       0.000                   1     6
+# Info: alu/Z_eq_0_ix60029z63347/CI MUXCY                 3.073   up
+# Info: alu/Z_eq_0_ix60029z63347/O  MUXCY       0.029     3.102   up
+# Info: alu/nx60029z7               (net)       0.000                   1     7
+# Info: alu/Z_eq_0_ix60029z63346/CI MUXCY                 3.102   up
+# Info: alu/Z_eq_0_ix60029z63346/O  MUXCY       0.029     3.131   up
+# Info: alu/nx60029z6               (net)       0.000                   1     8
+# Info: alu/Z_eq_0_ix60029z63345/CI MUXCY                 3.131   up
+# Info: alu/Z_eq_0_ix60029z63345/O  MUXCY       0.029     3.160   up
+# Info: alu/nx60029z5               (net)       0.000                   1     9
+# Info: alu/Z_eq_0_ix60029z63344/CI MUXCY                 3.160   up
+# Info: alu/Z_eq_0_ix60029z63344/O  MUXCY       0.029     3.189   up
+# Info: alu/nx60029z4               (net)       0.000                   1    10
+# Info: alu/Z_eq_0_ix60029z63343/CI MUXCY                 3.189   up
+# Info: alu/Z_eq_0_ix60029z63343/O  MUXCY       0.029     3.218   up
+# Info: alu/nx60029z3               (net)       0.000                   1    11
+# Info: alu/Z_eq_0_ix60029z63342/CI MUXCY                 3.218   up
+# Info: alu/Z_eq_0_ix60029z63342/O  MUXCY       0.029     3.247   up
+# Info: alu/nx60029z2               (net)       0.000                   1    12
+# Info: alu/Z_eq_0_ix60029z63341/CI MUXCY                 3.247   up
+# Info: alu/Z_eq_0_ix60029z63341/O  MUXCY       0.029     3.276   up
+# Info: alu/nx60029z1               (net)       0.000                   1    13
+# Info: alu/Z_eq_0_ix60029z52223/CI MUXCY                 3.276   up
+# Info: alu/Z_eq_0_ix60029z52223/O  MUXCY       0.029     3.305   up
+# Info: alu/Ex_Z                    (net)       0.941                  33    14
+# Info: id_ex/ix21886z2340/I3       LUT4                  4.246   up
+# Info: id_ex/ix21886z2340/O        LUT4        0.124     4.370   up
+# Info: id_ex/nx21886z3             (net)       0.341                   3    15
+# Info: id_ex/ix21886z58899/I1      LUT4                  4.711   up
+# Info: id_ex/ix21886z58899/O       LUT4        0.124     4.835   up
+# Info: id_ex/nx21886z2             (net)       1.114                 121    16
+# Info: reg_Ex_D1(0)/R              FDRE                  5.949   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.400
+# Info: 		                        -----------
+# Info: 		Data required time:           9.600
+# Info: 		Data arrival time:       -    5.949   ( 25.68% cell delay, 74.32% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        3.651
+# Info: Critical path #3, (path slack = 3.651):, Logic Levels = 16
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                           GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_Wb_D(16)/C              FDRE                  0.000   up
+# Info: reg_Wb_D(16)/Q              FDRE        0.496     0.496   up
+# Info: Wb_D(16)                    (net)       0.341                   3     0
+# Info: alu/ix324z1517/I0           LUT3                  0.837   up
+# Info: alu/ix324z1517/O            LUT3        0.124     0.961   up
+# Info: alu/nx324z3                 (net)       1.306                   9     1
+# Info: alu/ix324z53541/I0          LUT6                  2.267   up
+# Info: alu/ix324z53541/O           LUT6        0.124     2.391   up
+# Info: alu/nx324z5                 (net)       0.378                   5     2
+# Info: alu/ix60029z1325/I0         LUT6                  2.769   up
+# Info: alu/ix60029z1325/O          LUT6        0.124     2.893   up
+# Info: alu/nx60029z11              (net)       0.000                   1     3
+# Info: alu/Z_eq_0_ix60029z63350/S  MUXCY                 2.893   up
+# Info: alu/Z_eq_0_ix60029z63350/O  MUXCY       0.122     3.015   up
+# Info: alu/nx60029z10              (net)       0.000                   1     4
+# Info: alu/Z_eq_0_ix60029z63349/CI MUXCY                 3.015   up
+# Info: alu/Z_eq_0_ix60029z63349/O  MUXCY       0.029     3.044   up
+# Info: alu/nx60029z9               (net)       0.000                   1     5
+# Info: alu/Z_eq_0_ix60029z63348/CI MUXCY                 3.044   up
+# Info: alu/Z_eq_0_ix60029z63348/O  MUXCY       0.029     3.073   up
+# Info: alu/nx60029z8               (net)       0.000                   1     6
+# Info: alu/Z_eq_0_ix60029z63347/CI MUXCY                 3.073   up
+# Info: alu/Z_eq_0_ix60029z63347/O  MUXCY       0.029     3.102   up
+# Info: alu/nx60029z7               (net)       0.000                   1     7
+# Info: alu/Z_eq_0_ix60029z63346/CI MUXCY                 3.102   up
+# Info: alu/Z_eq_0_ix60029z63346/O  MUXCY       0.029     3.131   up
+# Info: alu/nx60029z6               (net)       0.000                   1     8
+# Info: alu/Z_eq_0_ix60029z63345/CI MUXCY                 3.131   up
+# Info: alu/Z_eq_0_ix60029z63345/O  MUXCY       0.029     3.160   up
+# Info: alu/nx60029z5               (net)       0.000                   1     9
+# Info: alu/Z_eq_0_ix60029z63344/CI MUXCY                 3.160   up
+# Info: alu/Z_eq_0_ix60029z63344/O  MUXCY       0.029     3.189   up
+# Info: alu/nx60029z4               (net)       0.000                   1    10
+# Info: alu/Z_eq_0_ix60029z63343/CI MUXCY                 3.189   up
+# Info: alu/Z_eq_0_ix60029z63343/O  MUXCY       0.029     3.218   up
+# Info: alu/nx60029z3               (net)       0.000                   1    11
+# Info: alu/Z_eq_0_ix60029z63342/CI MUXCY                 3.218   up
+# Info: alu/Z_eq_0_ix60029z63342/O  MUXCY       0.029     3.247   up
+# Info: alu/nx60029z2               (net)       0.000                   1    12
+# Info: alu/Z_eq_0_ix60029z63341/CI MUXCY                 3.247   up
+# Info: alu/Z_eq_0_ix60029z63341/O  MUXCY       0.029     3.276   up
+# Info: alu/nx60029z1               (net)       0.000                   1    13
+# Info: alu/Z_eq_0_ix60029z52223/CI MUXCY                 3.276   up
+# Info: alu/Z_eq_0_ix60029z52223/O  MUXCY       0.029     3.305   up
+# Info: alu/Ex_Z                    (net)       0.941                  33    14
+# Info: id_ex/ix21886z2340/I3       LUT4                  4.246   up
+# Info: id_ex/ix21886z2340/O        LUT4        0.124     4.370   up
+# Info: id_ex/nx21886z3             (net)       0.341                   3    15
+# Info: id_ex/ix21886z58899/I1      LUT4                  4.711   up
+# Info: id_ex/ix21886z58899/O       LUT4        0.124     4.835   up
+# Info: id_ex/nx21886z2             (net)       1.114                 121    16
+# Info: reg_Ex_D1(0)/R              FDRE                  5.949   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.400
+# Info: 		                        -----------
+# Info: 		Data required time:           9.600
+# Info: 		Data arrival time:       -    5.949   ( 25.68% cell delay, 74.32% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        3.651
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 2.878):, Logic Levels = 16
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                           GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: mem_wb_reg_Wb_Reg2reg/C     FDRE                  0.000   up
+# Info: mem_wb_reg_Wb_Reg2reg/Q     FDRE        0.496     0.496   up
+# Info: Wb_Reg2reg                  (net)       1.114                  97     0
+# Info: alu/ix324z1517/I2           LUT3                  1.610   up
+# Info: alu/ix324z1517/O            LUT3        0.124     1.734   up
+# Info: alu/nx324z3                 (net)       1.306                   9     1
+# Info: alu/ix324z53541/I0          LUT6                  3.040   up
+# Info: alu/ix324z53541/O           LUT6        0.124     3.164   up
+# Info: alu/nx324z5                 (net)       0.378                   5     2
+# Info: alu/ix60029z1325/I0         LUT6                  3.542   up
+# Info: alu/ix60029z1325/O          LUT6        0.124     3.666   up
+# Info: alu/nx60029z11              (net)       0.000                   1     3
+# Info: alu/Z_eq_0_ix60029z63350/S  MUXCY                 3.666   up
+# Info: alu/Z_eq_0_ix60029z63350/O  MUXCY       0.122     3.788   up
+# Info: alu/nx60029z10              (net)       0.000                   1     4
+# Info: alu/Z_eq_0_ix60029z63349/CI MUXCY                 3.788   up
+# Info: alu/Z_eq_0_ix60029z63349/O  MUXCY       0.029     3.817   up
+# Info: alu/nx60029z9               (net)       0.000                   1     5
+# Info: alu/Z_eq_0_ix60029z63348/CI MUXCY                 3.817   up
+# Info: alu/Z_eq_0_ix60029z63348/O  MUXCY       0.029     3.846   up
+# Info: alu/nx60029z8               (net)       0.000                   1     6
+# Info: alu/Z_eq_0_ix60029z63347/CI MUXCY                 3.846   up
+# Info: alu/Z_eq_0_ix60029z63347/O  MUXCY       0.029     3.875   up
+# Info: alu/nx60029z7               (net)       0.000                   1     7
+# Info: alu/Z_eq_0_ix60029z63346/CI MUXCY                 3.875   up
+# Info: alu/Z_eq_0_ix60029z63346/O  MUXCY       0.029     3.904   up
+# Info: alu/nx60029z6               (net)       0.000                   1     8
+# Info: alu/Z_eq_0_ix60029z63345/CI MUXCY                 3.904   up
+# Info: alu/Z_eq_0_ix60029z63345/O  MUXCY       0.029     3.933   up
+# Info: alu/nx60029z5               (net)       0.000                   1     9
+# Info: alu/Z_eq_0_ix60029z63344/CI MUXCY                 3.933   up
+# Info: alu/Z_eq_0_ix60029z63344/O  MUXCY       0.029     3.962   up
+# Info: alu/nx60029z4               (net)       0.000                   1    10
+# Info: alu/Z_eq_0_ix60029z63343/CI MUXCY                 3.962   up
+# Info: alu/Z_eq_0_ix60029z63343/O  MUXCY       0.029     3.991   up
+# Info: alu/nx60029z3               (net)       0.000                   1    11
+# Info: alu/Z_eq_0_ix60029z63342/CI MUXCY                 3.991   up
+# Info: alu/Z_eq_0_ix60029z63342/O  MUXCY       0.029     4.020   up
+# Info: alu/nx60029z2               (net)       0.000                   1    12
+# Info: alu/Z_eq_0_ix60029z63341/CI MUXCY                 4.020   up
+# Info: alu/Z_eq_0_ix60029z63341/O  MUXCY       0.029     4.049   up
+# Info: alu/nx60029z1               (net)       0.000                   1    13
+# Info: alu/Z_eq_0_ix60029z52223/CI MUXCY                 4.049   up
+# Info: alu/Z_eq_0_ix60029z52223/O  MUXCY       0.029     4.078   up
+# Info: alu/Ex_Z                    (net)       0.941                  33    14
+# Info: id_ex/ix21886z2340/I3       LUT4                  5.019   up
+# Info: id_ex/ix21886z2340/O        LUT4        0.124     5.143   up
+# Info: id_ex/nx21886z3             (net)       0.341                   3    15
+# Info: id_ex/ix21886z58899/I1      LUT4                  5.484   up
+# Info: id_ex/ix21886z58899/O       LUT4        0.124     5.608   up
+# Info: id_ex/nx21886z2             (net)       1.114                 121    16
+# Info: reg_Ex_D1(0)/R              FDRE                  6.722   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.400
+# Info: 		                        -----------
+# Info: 		Data required time:           9.600
+# Info: 		Data arrival time:       -    6.722   ( 22.73% cell delay, 77.27% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        2.878
+# Info: Critical path #2, (path slack = 5.595):, Logic Levels = 3
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                         GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: mem_wb_reg_Wb_Rd(0)/C     FDRE                  0.000   up
+# Info: mem_wb_reg_Wb_Rd(0)/Q     FDRE        0.496     0.496   up
+# Info: Rd_1_0(0)                 (net)       1.306                  23     0
+# Info: ix759z1827/I5             LUT6                  1.802   up
+# Info: ix759z1827/O              LUT6        0.124     1.926   up
+# Info: nx759z65                  (net)       0.941                  33     1
+# Info: reg_file/ix39940z18803/I0 LUT4                  2.867   up
+# Info: reg_file/ix39940z18803/O  LUT4        0.124     2.991   dn
+# Info: reg_file/nx39940z4        (net)       0.917                  32     2
+# Info: reg_file/ix36948z1314/I5  LUT6                  3.908   dn
+# Info: reg_file/ix36948z1314/O   LUT6        0.124     4.032   dn
+# Info: reg_file/nx36948z1        (net)       0.333                   1     3
+# Info: reg_Ex_D2(0)/D            FDRE                  4.365   dn
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.040
+# Info: 		                        -----------
+# Info: 		Data required time:           9.960
+# Info: 		Data arrival time:       -    4.365   ( 19.89% cell delay, 80.11% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        5.595
+# Info: Critical path #3, (path slack = 5.595):, Logic Levels = 3
+# Info: SOURCE CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: CLK period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                         GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_Rs(2)/C               FDRE                  0.000   up
+# Info: reg_Rs(2)/Q               FDRE        0.496     0.496   up
+# Info: Rs_1_0(2)                 (net)       1.306                  23     0
+# Info: ix759z1826/I0             LUT6                  1.802   up
+# Info: ix759z1826/O              LUT6        0.124     1.926   up
+# Info: nx759z32                  (net)       0.941                  33     1
+# Info: reg_file/ix43932z18803/I0 LUT4                  2.867   up
+# Info: reg_file/ix43932z18803/O  LUT4        0.124     2.991   dn
+# Info: reg_file/nx43932z4        (net)       0.917                  32     2
+# Info: reg_file/ix39941z1314/I5  LUT6                  3.908   dn
+# Info: reg_file/ix39941z1314/O   LUT6        0.124     4.032   dn
+# Info: reg_file/nx39941z1        (net)       0.333                   1     3
+# Info: reg_Ex_D1(0)/D            FDRE                  4.365   dn
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.340
+# Info: 		Dest clock delay:        +    2.340
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.040
+# Info: 		                        -----------
+# Info: 		Data required time:           9.960
+# Info: 		Data arrival time:       -    4.365   ( 19.89% cell delay, 80.11% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        5.595
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
