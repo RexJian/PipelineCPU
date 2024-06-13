@@ -41,5 +41,5 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 | 30 | 00e23822 | sub $7, $7, $2 | $7 = 12 - 5 = 7 |
 | 34 | ac670044 | sw $7, 68($3) | Store $7 value to the address 80 of data memory |
 | 38 | 8c020050 | lw $2, 80($0) | Load the value of the address 80 of data memory to $2 |
-| 3c | 20020001 | addi $2, $0, 1 | $2 = 1 |
+| 3c | 00442824 | and $5, $2, $4 | $5 = 7 and 1 = 1 |
 | 40 | ac020054 | sw $2, 84($0) | Store $2 value to the address of 80 of data memory |
