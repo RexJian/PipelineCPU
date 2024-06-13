@@ -51,7 +51,7 @@ Design a typical 5-stage pipeline MIPS CPU. When the CPU receives a command, it 
 ### Data Hazard
 When these source registers in a current instruction are dependent on the destination register Rd of a previous instruction, the Fwd_A or Fwd_B will be asserted. Then the CPU will use data forward to solve the problem.
 <p align="center">
-  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Command.jpg" width="850" height="35" >
+  <img src="https://github.com/RexJian/PipelineCPU/blob/main/Image/DataHazard_Command.jpg" width="850" height="50" >
    <br> <strong> When the CPU implement to the command, it would cause data hazard in $7 register. </strong>
 </p>
 <p align="center">
